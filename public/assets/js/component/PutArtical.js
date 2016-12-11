@@ -23,15 +23,15 @@ class ArticalForm extends React.Component {
 	}
 	render() { 
 		return <form className="ArticalForm" onSubmit={this.handleSubmit.bind(this)}>
-			<lable for="title">标题：</lable><input placeholder="标题" type="text" ref="title"/><br/>
-			<lable for="text">正文：</lable><textarea placeholder="你的文章" rows="30" cols="60" ref="text"></textarea><br/>
+			<lable htmlfor="title">标题：</lable><input placeholder="标题" type="text" ref="title"/><br/>
+			<lable htmlfor="text">正文：</lable><textarea placeholder="你的文章" rows="30" cols="60" ref="text"></textarea><br/>
 			<input type="submit" value="发表" />
 		</form>;
 	}
 }
 class PutArtical extends React.Component {
 	render() {
-		return <div>
+		return <div className="putartical">
 			<h3 className="partTitle">上传文章</h3>
 			<ArticalForm />
 		</div>

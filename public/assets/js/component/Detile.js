@@ -10,7 +10,7 @@ class Detile extends React.Component {
 				data = data[0]
 				document.getElementsByClassName('detile')[0].innerHTML = "<div>" +
 					"<h3>" + data.title + "</h3>" +
-					"<span>" + data.time + "</span>" +
+					"<span>发表时间<strong>" + data.time + "</strong></span>" +
 					"<p>" + data.text + "</p>" +
 				"</div>";
 			}

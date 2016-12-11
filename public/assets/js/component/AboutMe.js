@@ -1,7 +1,7 @@
 import React from 'react'
 class AboutMe extends React.Component {
 	render() {
-		return <div>
+		return <div className="aboutme">
 			<h3 className="partTitle">关于</h3>
 			<ul>
 				<li><em>姓名</em>：焦贵彬</li>

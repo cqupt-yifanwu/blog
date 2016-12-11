@@ -6,6 +6,7 @@ body,html,ul,ol,li,p,h1,h2,h3,h4,h5,h6 {
 a {
 	text-decoration: none;
 }
+/* 主页样式 */
 .mainContent {
 	margin: 30px auto;
 	width: 80%;
@@ -21,6 +22,7 @@ a {
 	float: left;
 	margin-left: 30px;
 }
+/* 列表页样式 */
 .partTitle {
 	margin-top: 25px;
 	margin-bottom: 20px;
@@ -30,4 +32,32 @@ a {
 	margin-top: 5px;
 	border-bottom: 1px solid #666;
 	cursor: pointer;
+}
+
+/* 上传文章 */
+.ArticalForm label {
+	margin-bottom: 10px;
+}
+.ArticalForm textarea{
+	margin-top: 10px;
+	vertical-align: top;
+}
+
+/*  详情页样式 */
+.detile {
+	margin-top: 30px;
+}
+.detile h3 {
+	margin-top: 20px; 
+	margin-bottom: 10px;
+}
+.detile p {
+	width: 70%;
+	margin-top: 20px;
+}
+
+/* 关于 */
+.aboutme li{
+	list-style-type: none;
+	margin-bottom: 15px;
 }

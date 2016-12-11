@@ -37293,14 +37293,14 @@
 					{ className: 'ArticalForm', onSubmit: this.handleSubmit.bind(this) },
 					_react2.default.createElement(
 						'lable',
-						{ 'for': 'title' },
+						{ Htmlfor: 'title' },
 						'\u6807\u9898\uFF1A'
 					),
 					_react2.default.createElement('input', { placeholder: '\u6807\u9898', type: 'text', ref: 'title' }),
 					_react2.default.createElement('br', null),
 					_react2.default.createElement(
 						'lable',
-						{ 'for': 'text' },
+						{ Htmlfor: 'text' },
 						'\u6B63\u6587\uFF1A'
 					),
 					_react2.default.createElement('textarea', { placeholder: '\u4F60\u7684\u6587\u7AE0', rows: '30', cols: '60', ref: 'text' }),
@@ -37327,7 +37327,7 @@
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
-					null,
+					{ className: 'putartical' },
 					_react2.default.createElement(
 						'h3',
 						{ className: 'partTitle' },
@@ -37377,7 +37377,7 @@
 			value: function render() {
 				return _react2.default.createElement(
 					"div",
-					null,
+					{ className: "aboutme" },
 					_react2.default.createElement(
 						"h3",
 						{ className: "partTitle" },
@@ -37483,7 +37483,7 @@
 					dataType: 'json',
 					success: function success(data) {
 						data = data[0];
-						document.getElementsByClassName('detile')[0].innerHTML = "<div>" + "<h3>" + data.title + "</h3>" + "<span>" + data.time + "</span>" + "<p>" + data.text + "</p>" + "</div>";
+						document.getElementsByClassName('detile')[0].innerHTML = "<div>" + "<h3>" + data.title + "</h3>" + "<span>发表时间<strong>" + data.time + "</strong></span>" + "<p>" + data.text + "</p>" + "</div>";
 					}
 				});
 			}
