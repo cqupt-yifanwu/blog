@@ -3,9 +3,9 @@ import { Link } from 'react-router'
 
 class Nav extends React.Component {
 	render () {
-		return <div className="nabBar">
+		return <div className="mainContent">
 			<h1>我的个人网站</h1>
-			<ul role="nav">
+			<ul role="nav" className="navBar">
 				<li><Link to="/list">博文</Link></li>
 				<li><Link to="/input">新文章</Link></li>
 				<li><Link to="/about">关于</Link></li>

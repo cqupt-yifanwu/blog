@@ -1,18 +1,21 @@
 import React from 'react'
+import $ from 'jquery';
+import { Router, Route, hashHistory,Link } from 'react-router'
 
 class ArticleTitle extends React.Component {
 	render() {
+		let url = "/detile/" + this.props.atl._id;
 		return <div className="articleTitle"> 
-			<h3>
-				{this.props.title}
-			</h3>
+			<h4>
+				<Link to={url}>{this.props.atl.title}</Link>
+			</h4>
 		</div>
 	}
 }
 class TitleList extends React.Component {
 	render() {
 		let titleNodes = this.props.data.map(function (article) {
-			return <ArticleTitle title={article.title}/>;
+			return <ArticleTitle atl={article}/>;
 		});
 		return <div className="titleLists">
 			{titleNodes}
@@ -43,7 +46,7 @@ class Lists extends React.Component {
 	}
 	render() {
 		return <div>
-			<h2>文章列表</h2>
+			<h2 className="partTitle">文章列表</h2>
 			<TitleList data={this.state.data}/>
 		</div>
 	}

@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var http = require('http');
 
-var blog = require('./routes/blog')
+var blog = require('./routes/blog');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
@@ -28,9 +28,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 // 定义所有的增删改查的借口
 app.use('/', routes);
 app.get('/blog', blog.list);
-// app.get('/comments/:id', blog.get);  
+app.get('/blog/:id', blog.get);  
 // app.delete('/comments/:id', blog.delete);  
-// app.post('/comments', blog.add);    
+app.post('/blog', blog.add);    
 app.use('/users', users);
 
 // catch 404 and forward to error handler

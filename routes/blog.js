@@ -19,21 +19,21 @@ db.connection.on('error', function (err) {
 var i = 0;
   
 exports.list = function(req, res){  
-  var msg;
   article.find(function (err, article) {
       console.log(article);
       res.json(article);  
   });
 };  
   
-// exports.get = function(req, res){  
-//    if(comments.length <= req.params.id || req.params.id < 0) {
-//     res.statusCode = 404;
-//     return res.send('Error 404: No comment found');
-//   }  
-//   var q = comments[req.params.id];
-//   res.json(q); 
-// };  
+exports.get = function(req, res){  
+  var q = article.find({_id:req.params.id}, function(err, article) {
+    if (err) {
+      console.log("查询文章错误！");
+    };
+    console.log(article);
+    res.json(article)
+  })
+};  
   
   
 exports.delete = function(req, res){  
@@ -50,17 +50,18 @@ exports.delete = function(req, res){
 
   
 exports.add = function(req, res){  
-  if(!req.body.hasOwnProperty('author') || 
+  if(!req.body.hasOwnProperty('title') || 
      !req.body.hasOwnProperty('text')) {
     res.statusCode = 400;
     return res.send('Error 400: Post syntax incorrect.');
   } 
   // 实例化新添加的内容
-  var newComment = {
-    author : req.body.author,
-    text : req.body.text
+  var newArticle = {
+    title : req.body.title,
+    text : req.body.text,
+    time: req.body.time
   }; 
-  var commentEntity = new Comment(newComment);
-  commentEntity.save();
+  var ArticleEntity = new article(newArticle);
+  ArticleEntity.save();
   res.json(true);   
 };

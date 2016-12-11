@@ -2,7 +2,7 @@ import React from 'react'
 class AboutMe extends React.Component {
 	render() {
 		return <div>
-			<h2>关于</h2>
+			<h3 className="partTitle">关于</h3>
 			<ul>
 				<li><em>姓名</em>：焦贵彬</li>
 				<li><em>学校</em>：重庆邮电大学</li>

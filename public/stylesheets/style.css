@@ -6,15 +6,28 @@ body,html,ul,ol,li,p,h1,h2,h3,h4,h5,h6 {
 a {
 	text-decoration: none;
 }
-.navBar {
-	margin-top: 30px;
+.mainContent {
+	margin: 30px auto;
 	width: 80%;
 }
-.navBar ul {
+.navBar {
 	margin-top: 20px;
+	margin-left: -30px;
 	list-style-type: none;
-	background-color: 
+	/*background-color: ;*/
+	overflow: hidden;
 }
 .navBar li {
 	float: left;
+	margin-left: 30px;
+}
+.partTitle {
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+.articleTitle {
+	margin-bottom: 20px;
+	margin-top: 5px;
+	border-bottom: 1px solid #666;
+	cursor: pointer;
 }
