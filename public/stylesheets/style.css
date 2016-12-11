@@ -6,10 +6,11 @@ body,html,ul,ol,li,p,h1,h2,h3,h4,h5,h6 {
 a {
 	text-decoration: none;
 }
-/* 主页样式 */
+/* 导航样式 */
 .mainContent {
-	margin: 30px auto;
-	width: 80%;
+	margin: 0 auto;
+	width: 50%;
+	min-height: 500px;
 }
 .navBar {
 	margin-top: 20px;
@@ -22,6 +23,20 @@ a {
 	float: left;
 	margin-left: 30px;
 }
+
+/* Home页 */
+.Index {
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+.Index h3 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.Index ul {
+	margin-left: 30px;
+}
+
 /* 列表页样式 */
 .partTitle {
 	margin-top: 25px;
@@ -61,3 +76,4 @@ a {
 	list-style-type: none;
 	margin-bottom: 15px;
 }
+

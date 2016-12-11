@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-class Nav extends React.Component {
+class Main extends React.Component {
 	render () {
 		return <div className="mainContent">
 			<h1>我的个人网站</h1>
@@ -14,4 +14,4 @@ class Nav extends React.Component {
 		</div>
 	}
 }
-module.exports = Nav;
+module.exports = Main;

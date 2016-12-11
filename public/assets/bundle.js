@@ -63,23 +63,27 @@
 
 	var _reactRouter = __webpack_require__(184);
 
-	var _Nav = __webpack_require__(240);
+	var _Home = __webpack_require__(240);
 
-	var _Nav2 = _interopRequireDefault(_Nav);
+	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Lists = __webpack_require__(241);
+	var _Main = __webpack_require__(241);
+
+	var _Main2 = _interopRequireDefault(_Main);
+
+	var _Lists = __webpack_require__(242);
 
 	var _Lists2 = _interopRequireDefault(_Lists);
 
-	var _PutArtical = __webpack_require__(243);
+	var _PutArtical = __webpack_require__(244);
 
 	var _PutArtical2 = _interopRequireDefault(_PutArtical);
 
-	var _AboutMe = __webpack_require__(244);
+	var _AboutMe = __webpack_require__(245);
 
 	var _AboutMe2 = _interopRequireDefault(_AboutMe);
 
-	var _Detile = __webpack_require__(245);
+	var _Detile = __webpack_require__(246);
 
 	var _Detile2 = _interopRequireDefault(_Detile);
 
@@ -90,7 +94,8 @@
 		{ history: _reactRouter.hashHistory },
 		_react2.default.createElement(
 			_reactRouter.Route,
-			{ path: '/', component: _Nav2.default },
+			{ path: '/', component: _Main2.default },
+			_react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: '/list', component: _Lists2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: '/input', component: _PutArtical2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: '/about', component: _AboutMe2.default }),
@@ -26795,6 +26800,103 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Home = function (_React$Component) {
+		_inherits(Home, _React$Component);
+
+		function Home() {
+			_classCallCheck(this, Home);
+
+			return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+		}
+
+		_createClass(Home, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'Index' },
+					_react2.default.createElement(
+						'h3',
+						null,
+						'\u9879\u76EE\u4ECB\u7ECD'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'\u6B21\u6B64\u9879\u76EE\u662F\u4E2A\u4EBA\u642D\u5EFA\u7684\u4E00\u4E2A\u7B80\u5355\u7684\u7F51\u7AD9\uFF0C\u5B83\u5305\u62EC\u7684\u529F\u80FD\u6709\u6D4F\u89C8\u6587\u7AE0\u5217\u8868\uFF0C\u6D4F\u89C8\u5B8C\u6574\u6587\u7AE0\uFF0C\u53D1\u5E03\u65B0\u6587\u7AE0\uFF0C\u8FDB\u884C\u7559\u8A00'
+					),
+					_react2.default.createElement(
+						'span',
+						null,
+						'\u8BE5\u7F51\u7AD9\u5229\u7528\u4E86\uFF1A'
+					),
+					_react2.default.createElement(
+						'ul',
+						null,
+						_react2.default.createElement(
+							'li',
+							null,
+							'react\u6784\u5EFA\u524D\u7AEF\u7684\u7EC4\u4EF6'
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							'react-router\u7BA1\u7406\u8DEF\u7531\u4F7F\u5176\u6210\u4E3A\u5355\u9875\u5E94\u7528'
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							'express4.X\u642D\u5EFA\u540E\u53F0\u63A5\u53E3'
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							'mongodb(mongoose)\u6570\u636E\u7684\u5B58\u53D6'
+						),
+						_react2.default.createElement(
+							'li',
+							null,
+							'webpack\u7BA1\u7406+\u6784\u5EFA'
+						)
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						_react2.default.createElement(
+							'a',
+							{ href: 'https://github.com/cqupt-yifanwu/blog' },
+							'github\u9879\u76EE\u5730\u5740'
+						)
+					)
+				);
+			}
+		}]);
+
+		return Home;
+	}(_react2.default.Component);
+
+	module.exports = Home;
+
+/***/ },
+/* 241 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var _reactRouter = __webpack_require__(184);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -26805,16 +26907,16 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Nav = function (_React$Component) {
-		_inherits(Nav, _React$Component);
+	var Main = function (_React$Component) {
+		_inherits(Main, _React$Component);
 
-		function Nav() {
-			_classCallCheck(this, Nav);
+		function Main() {
+			_classCallCheck(this, Main);
 
-			return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
+			return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
 		}
 
-		_createClass(Nav, [{
+		_createClass(Main, [{
 			key: 'render',
 			value: function render() {
 				return _react2.default.createElement(
@@ -26856,18 +26958,27 @@
 							)
 						)
 					),
-					this.props.children
+					this.props.children,
+					_react2.default.createElement(
+						'div',
+						{ className: 'footer' },
+						_react2.default.createElement(
+							'a',
+							{ href: 'https://github.com/cqupt-yifanwu/blog' },
+							'\u9879\u76EE\u5728github\u4E0A\u7684\u6E90\u7801'
+						)
+					)
 				);
 			}
 		}]);
 
-		return Nav;
+		return Main;
 	}(_react2.default.Component);
 
-	module.exports = Nav;
+	module.exports = Main;
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26878,7 +26989,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _jquery = __webpack_require__(242);
+	var _jquery = __webpack_require__(243);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -27005,7 +27116,7 @@
 	module.exports = Lists;
 
 /***/ },
-/* 242 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -37231,7 +37342,7 @@
 
 
 /***/ },
-/* 243 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37242,7 +37353,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _jquery = __webpack_require__(242);
+	var _jquery = __webpack_require__(243);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -37293,14 +37404,14 @@
 					{ className: 'ArticalForm', onSubmit: this.handleSubmit.bind(this) },
 					_react2.default.createElement(
 						'lable',
-						{ Htmlfor: 'title' },
+						{ htmlfor: 'title' },
 						'\u6807\u9898\uFF1A'
 					),
 					_react2.default.createElement('input', { placeholder: '\u6807\u9898', type: 'text', ref: 'title' }),
 					_react2.default.createElement('br', null),
 					_react2.default.createElement(
 						'lable',
-						{ Htmlfor: 'text' },
+						{ htmlfor: 'text' },
 						'\u6B63\u6587\uFF1A'
 					),
 					_react2.default.createElement('textarea', { placeholder: '\u4F60\u7684\u6587\u7AE0', rows: '30', cols: '60', ref: 'text' }),
@@ -37344,7 +37455,7 @@
 	module.exports = PutArtical;
 
 /***/ },
-/* 244 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -37442,7 +37553,7 @@
 	module.exports = AboutMe;
 
 /***/ },
-/* 245 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37453,7 +37564,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _jquery = __webpack_require__(242);
+	var _jquery = __webpack_require__(243);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
