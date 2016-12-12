@@ -9,14 +9,14 @@ class Comment extends React.Component {
         <h4 className="commentAuthor">
           {this.props.author}
         </h4>
+        <p>{this.props.text}</p>
       </div>;
   }
 }
 class CommentList extends React.Component {
   render () {
     let commentNodes = this.props.data.map(function (comment) {
-      return <Comment author={comment.author}>
-          {comment.text}
+      return <Comment author={comment.author} text={comment.text}>
         </Comment>;
     });     
     return <div className="commentList">
@@ -55,6 +55,7 @@ class CommentBox extends React.Component {
 	loadCommentsFromServer () {
 	    $.ajax({
 	      url: '/comment/'+this.props.id,
+	      type: 'GET',
 	      dataType: 'json',
 	      cache: false,
 	      success: (data) => {
@@ -69,7 +70,7 @@ class CommentBox extends React.Component {
 	      type: 'POST',
 	      data: comment,
 	      success: (data) => {
-	        // this.setState({data: data});
+	        this.setState({data: data});
 	        console.log(data);
 	      }
 	    });    

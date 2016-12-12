@@ -37395,14 +37395,14 @@
 					{ className: 'ArticalForm', onSubmit: this.handleSubmit.bind(this) },
 					_react2.default.createElement(
 						'lable',
-						{ htmlfor: 'title' },
+						{ htmlFor: 'title' },
 						'\u6807\u9898\uFF1A'
 					),
 					_react2.default.createElement('input', { placeholder: '\u6807\u9898', type: 'text', ref: 'title' }),
 					_react2.default.createElement('br', null),
 					_react2.default.createElement(
 						'lable',
-						{ htmlfor: 'text' },
+						{ htmlFor: 'text' },
 						'\u6B63\u6587\uFF1A'
 					),
 					_react2.default.createElement('textarea', { placeholder: '\u4F60\u7684\u6587\u7AE0', rows: '30', cols: '60', ref: 'text' }),
@@ -37666,6 +37666,11 @@
 											'h4',
 											{ className: 'commentAuthor' },
 											this.props.author
+									),
+									_react2.default.createElement(
+											'p',
+											null,
+											this.props.text
 									)
 							);
 					}
@@ -37687,11 +37692,7 @@
 					key: 'render',
 					value: function render() {
 							var commentNodes = this.props.data.map(function (comment) {
-									return _react2.default.createElement(
-											Comment,
-											{ author: comment.author },
-											comment.text
-									);
+									return _react2.default.createElement(Comment, { author: comment.author, text: comment.text });
 							});
 							return _react2.default.createElement(
 									'div',
@@ -37765,6 +37766,7 @@
 
 							_jquery2.default.ajax({
 									url: '/comment/' + this.props.id,
+									type: 'GET',
 									dataType: 'json',
 									cache: false,
 									success: function success(data) {
@@ -37775,13 +37777,15 @@
 			}, {
 					key: 'handleCommentSubmit',
 					value: function handleCommentSubmit(comment) {
+							var _this6 = this;
+
 							_jquery2.default.ajax({
 									url: '/comment/' + this.props.id,
 									dataType: 'json',
 									type: 'POST',
 									data: comment,
 									success: function success(data) {
-											// this.setState({data: data});
+											_this6.setState({ data: data });
 											console.log(data);
 									}
 							});

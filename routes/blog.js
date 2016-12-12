@@ -6,19 +6,20 @@
  * 完整的定义增删改查
  */
 
-var article = require('../model/articleDB.js');  // 引入的model，可用来操作数据库和生成Entity
-var comment = require('../model/commentDB.js');
+var articleSchema = require('../model/articleDB.js');  // 引入的model，可用来操作数据库和生成Entity
+var CommentSchema = require('../model/commentDB.js');
 var mongoose = require('mongoose');
 
-var db = mongoose.connect('mongodb://127.0.0.1:27017/article'); // 链接数据库
-db.connection.on('connected', function () {
-  console.log('Mongoose connection success');
-});
-db.connection.on('error', function (err) {
-  console.log('connection error');
-});
-var i = 0;
-  
+var db2 = mongoose.createConnection('mongodb://127.0.0.1:27017/comment');
+var comment = db2.model('comment', CommentSchema);
+var db1 = mongoose.createConnection('mongodb://127.0.0.1:27017/article'); // 链接数据库
+var article = db1.model('article', articleSchema);
+// db1.connection.on('connected', function () {
+//   console.log('Mongoose1 connection success');
+// });
+// db1.connection.on('error', function (err) {
+//   console.log('connection1 error');
+// });
 exports.list = function(req, res){  
   article.find(function (err, article) {
       console.log(article);
@@ -69,14 +70,14 @@ exports.add = function(req, res){
 
 
 exports.commentList = function (req, res) {
-  comment.find({articleId: req.params.id}, function (err, comments) {
+  comment.find({articleId: req.params.id.toString()}, function (err, comments) {
     if (err) {
-      console.log("获取评论错误");
+      console.log("获取评论出错");
     }
-    console.log(comments);
+    res.json(comments);
   })
 };
-exports.commentAdd = function (req, res) {
+exports.commentAdd = function (req, res, next) {
   if(!req.body.hasOwnProperty('author') || 
      !req.body.hasOwnProperty('text') || 
      !req.body.hasOwnProperty('articleId')) {
@@ -90,6 +91,10 @@ exports.commentAdd = function (req, res) {
     text : req.body.text
   }; 
   var commentEntity = new comment(newComment);
-  commentEntity.save();
-  res.json(true);     
+  /*
+  *  在save的成功回调函数里使用中间件next，再次执行commentList，获取完整的数据
+  */
+  commentEntity.save(function () {         
+    next();
+  });
 };

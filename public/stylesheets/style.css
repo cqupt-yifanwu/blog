@@ -71,6 +71,15 @@ a {
 	margin-top: 20px;
 }
 
+/* 评论的样式 */
+.comment p{
+	border-bottom: 1px solid #666;
+}
+.commentForm input{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
 /* 关于 */
 .aboutme li{
 	list-style-type: none;

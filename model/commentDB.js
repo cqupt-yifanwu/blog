@@ -3,12 +3,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var CommentSchema = new Schema({
-	articleId: Number,
+	articleId: String,
 	author: String,
 	text: String
 });
 
-// 将Schema发布为model
-var Comment = mongoose.model('Comment',CommentSchema);
-
-module.exports = Comment;
+module.exports = CommentSchema;

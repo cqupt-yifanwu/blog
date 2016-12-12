@@ -9,10 +9,10 @@ var articleSchema = new Schema({
 	time: Date
 });
 
-// 将Schema发布为model
-var article = mongoose.model('article', articleSchema);
+// // 将Schema发布为model
+// var article = mongoose.model('article', articleSchema);
 
-module.exports = article;
+module.exports = articleSchema;
 
 /*
 *	-- Schema: 一种以文件形式存储的数据库模型骨架，不具备数据库操作能力
