@@ -9,11 +9,13 @@ react+react router+node（express）+mongodb+webpack 栈
 * node(express4.X)搭建后台和接口
 * mongodb(mongoose)管理数据存取
 * 构建工具使用webpack
+
 ##### 部署
 * 根据webpack.config.js和package.json，npm install 所有的依赖项
 * 在mongodb的文件目录下运行mongodb
 * webpack 命令编译所需的bundle.js文件
 * node app.js 运行服务，访问localhost：3000
+
 ##### tips&other
 * 所有的路由在app.js中定义
 * 增删改查的操作在文件blog.js
@@ -21,4 +23,4 @@ react+react router+node（express）+mongodb+webpack 栈
 * 此项目链接两个数据库，评论的数据根据文章的_id存取（不同的文章拥有自己的评论）
 * 评论列表利用react状态机的原理进行实时更新（setState）
 * 由于时间原因该网站样式比较粗糙
-* react组件之间的通信使用了嵌套关系未使用redux，以后可以改进
+* react组件之间的通信使用了嵌套关系，未使用redux，以后可以改进
