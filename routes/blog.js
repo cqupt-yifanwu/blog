@@ -7,6 +7,7 @@
  */
 
 var article = require('../model/articleDB.js');  // 引入的model，可用来操作数据库和生成Entity
+var comment = require('../model/commentDB.js');
 var mongoose = require('mongoose');
 
 var db = mongoose.connect('mongodb://127.0.0.1:27017/article'); // 链接数据库
@@ -36,16 +37,16 @@ exports.get = function(req, res){
 };  
   
   
-exports.delete = function(req, res){  
-  Comment.remove({_id: req.params.id},function (err) {
-    if (err) {
-      console.log(err);
-    };
-    Comment.find(function (err, comment) {
-      res.json(comment);  
-    });
-  });
-};  
+// exports.delete = function(req, res){  
+//   Comment.remove({_id: req.params.id},function (err) {
+//     if (err) {
+//       console.log(err);
+//     };
+//     Comment.find(function (err, comment) {
+//       res.json(comment);  
+//     });
+//   });
+// };  
   
 
   
@@ -64,4 +65,31 @@ exports.add = function(req, res){
   var ArticleEntity = new article(newArticle);
   ArticleEntity.save();
   res.json(true);   
+};
+
+
+exports.commentList = function (req, res) {
+  comment.find({articleId: req.params.id}, function (err, comments) {
+    if (err) {
+      console.log("获取评论错误");
+    }
+    console.log(comments);
+  })
+};
+exports.commentAdd = function (req, res) {
+  if(!req.body.hasOwnProperty('author') || 
+     !req.body.hasOwnProperty('text') || 
+     !req.body.hasOwnProperty('articleId')) {
+    res.statusCode = 400;
+    return res.send('Error 400: Post syntax incorrect.');
+  } 
+  // 实例化新添加的内容
+  var newComment = {
+    articleId: req.body.articleId,
+    author : req.body.author,
+    text : req.body.text
+  }; 
+  var commentEntity = new comment(newComment);
+  commentEntity.save();
+  res.json(true);     
 };

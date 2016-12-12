@@ -29,7 +29,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.get('/blog', blog.list);
 app.get('/blog/:id', blog.get);  
-// app.delete('/comments/:id', blog.delete);  
+// app.delete('/comments/:id', blog.delete);
+app.get('/comment/:id', blog.commentList);
+app.post('/comment/:id', blog.commentAdd);  
 app.post('/blog', blog.add);    
 app.use('/users', users);
 
