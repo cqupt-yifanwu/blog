@@ -7,7 +7,7 @@ a {
 	text-decoration: none;
 }
 /* 导航样式 */
-.mainContent {
+/* .mainContent {
 	margin: 0 auto;
 	width: 50%;
 	min-height: 500px;
@@ -16,7 +16,7 @@ a {
 	margin-top: 20px;
 	margin-left: -30px;
 	list-style-type: none;
-	/*background-color: ;*/
+	background-color: ;
 	overflow: hidden;
 }
 .navBar li {
@@ -24,7 +24,7 @@ a {
 	margin-left: 30px;
 }
 
-/* Home页 */
+Home页
 .Index {
 	margin-top: 10px;
 	margin-bottom: 50px;
@@ -37,7 +37,7 @@ a {
 	margin-left: 30px;
 }
 
-/* 列表页样式 */
+列表页样式
 .partTitle {
 	margin-top: 25px;
 	margin-bottom: 20px;
@@ -49,7 +49,7 @@ a {
 	cursor: pointer;
 }
 
-/* 上传文章 */
+上传文章
 .ArticalForm label {
 	margin-bottom: 10px;
 }
@@ -58,7 +58,7 @@ a {
 	vertical-align: top;
 }
 
-/*  详情页样式 */
+详情页样式
 .detile {
 	margin-top: 30px;
 }
@@ -71,7 +71,7 @@ a {
 	margin-top: 20px;
 }
 
-/* 评论的样式 */
+评论的样式
 .comment p{
 	border-bottom: 1px solid #666;
 }
@@ -80,9 +80,10 @@ a {
 	margin-bottom: 20px;
 }
 
-/* 关于 */
+关于
 .aboutme li{
 	list-style-type: none;
 	margin-bottom: 15px;
 }
 
+ */

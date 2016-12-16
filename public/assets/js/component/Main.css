@@ -1,0 +1,49 @@
+:global {
+	a {
+		text-decoration-style: none;
+	}
+	#contents {
+		margin: 80px auto;
+		width: 50%;
+		min-height: 600px;
+	}
+	#contents h3 {
+		color: #2085c5;
+		margin-bottom: 20px;
+	}
+};
+
+.font {
+	color: #fff;
+}
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	vertical-align: middle;
+	background-color: #2085c5; 
+	height: 60px;
+	overflow: hidden;
+}
+.title {
+	composes: font;
+	float: left;
+	margin-left: 20%;
+}
+.nav{
+	float: right;
+	margin-right: 20%;
+	margin-bottom: 30px;
+	text-align: center;
+	display: inline-block;
+	height: 70px;
+	overflow: hidden;
+}
+.lead {
+	composes: font;
+	float: left;
+	list-style-type: none;
+	margin-left: 20px;
+	margin-top: 25px;
+}
