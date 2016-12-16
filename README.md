@@ -15,6 +15,7 @@ react+react router+node（express）+mongodb+webpack 栈
 * 在mongodb的文件目录下运行mongodb
 * webpack 命令编译所需的bundle.js文件
 * node app.js 运行服务，访问localhost：3000
+* 该项目在开发环境下可以使用webpack提供的服务器，使用其热加载功能，正常情况使用nodejs服务
 
 ##### tips&other
 * 所有的路由在app.js中定义
