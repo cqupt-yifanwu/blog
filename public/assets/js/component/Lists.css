@@ -1,0 +1,21 @@
+.article {
+	width: 600px;
+	height: 160px;
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 10px 25px;
+	overflow: hidden;
+	border-radius: 2px;
+	box-shadow: 2px 2px 5px #888;
+	background-color: #fff;
+}
+.text {
+	margin-top: 15px;
+	overflow: hidden;
+	text-indent: 2em;
+	line-height: 1.4em;
+	height: 4.2em;
+}
+.read {
+	color: #3385ff;
+}

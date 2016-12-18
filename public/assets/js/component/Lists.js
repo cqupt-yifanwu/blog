@@ -1,14 +1,21 @@
 import React from 'react'
 import $ from 'jquery';
 import { Router, Route, hashHistory,Link } from 'react-router'
+import style from './Lists.css'
 
 class ArticleTitle extends React.Component {
 	render() {
 		let url = "/detile/" + this.props.atl._id;
-		return <div className="articleTitle"> 
+		return <div className={style.article}> 
 			<h4>
 				<Link to={url}>{this.props.atl.title}</Link>
 			</h4>
+			<p className={style.text}>
+				{this.props.atl.text}
+			</p>
+			<span className={style.read}>
+				<Link to={url}>阅读原文</Link>
+			</span>
 		</div>
 	}
 }
@@ -46,7 +53,7 @@ class Lists extends React.Component {
 	}
 	render() {
 		return <div>
-			<h2 className="partTitle">文章列表</h2>
+			<h2 className={style.title}>文章列表</h2>
 			<TitleList data={this.state.data}/>
 		</div>
 	}

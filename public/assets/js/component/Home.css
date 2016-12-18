@@ -3,6 +3,13 @@
 	margin-bottom: 50px;
 }
 .tip {
-	margin-left: 30px;
+	margin-left: 20px;
 	margin-top: 10px;
+}
+.content {
+	width: 70%;
+	margin: 0 auto;
+}
+.github {
+	margin: 30px auto;
 }

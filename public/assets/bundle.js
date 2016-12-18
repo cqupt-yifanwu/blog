@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "457e79ccc67ac5d111ce"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d5a10809f8015eaf8864"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -614,15 +614,15 @@
 
 	var _Lists2 = _interopRequireDefault(_Lists);
 
-	var _PutArtical = __webpack_require__(400);
+	var _PutArtical = __webpack_require__(402);
 
 	var _PutArtical2 = _interopRequireDefault(_PutArtical);
 
-	var _AboutMe = __webpack_require__(401);
+	var _AboutMe = __webpack_require__(403);
 
 	var _AboutMe2 = _interopRequireDefault(_AboutMe);
 
-	var _Detile = __webpack_require__(402);
+	var _Detile = __webpack_require__(404);
 
 	var _Detile2 = _interopRequireDefault(_Detile);
 
@@ -27395,51 +27395,55 @@
 						'\u9879\u76EE\u4ECB\u7ECD'
 					),
 					_react3.default.createElement(
-						'p',
-						null,
-						'\u6B21\u6B64\u9879\u76EE\u662F\u4E2A\u4EBA\u642D\u5EFA\u7684\u4E00\u4E2A\u7B80\u5355\u7684\u7F51\u7AD9\uFF0C\u5B83\u5305\u62EC\u7684\u529F\u80FD\u6709\u6D4F\u89C8\u6587\u7AE0\u5217\u8868\uFF0C\u6D4F\u89C8\u5B8C\u6574\u6587\u7AE0\uFF0C\u53D1\u5E03\u65B0\u6587\u7AE0\uFF0C\u8FDB\u884C\u7559\u8A00'
-					),
-					_react3.default.createElement(
-						'span',
-						null,
-						'\u8BE5\u7F51\u7AD9\u5229\u7528\u4E86\uFF1A'
-					),
-					_react3.default.createElement(
-						'ul',
-						{ className: _Home2.default.tip },
+						'div',
+						{ className: _Home2.default.content },
 						_react3.default.createElement(
-							'li',
+							'p',
 							null,
-							'react\u6784\u5EFA\u524D\u7AEF\u7684\u7EC4\u4EF6'
+							'\u6B64\u9879\u76EE\u662F\u4E2A\u4EBA\u642D\u5EFA\u7684\u4E00\u4E2A\u7B80\u5355\u7684\u7F51\u7AD9\uFF0C\u5B83\u5305\u62EC\u7684\u529F\u80FD\u6709\u6D4F\u89C8\u6587\u7AE0\u5217\u8868\uFF0C\u6D4F\u89C8\u5B8C\u6574\u6587\u7AE0\uFF0C\u53D1\u5E03\u65B0\u6587\u7AE0\uFF0C\u8FDB\u884C\u7559\u8A00'
 						),
 						_react3.default.createElement(
-							'li',
+							'span',
 							null,
-							'react-router\u7BA1\u7406\u8DEF\u7531\u4F7F\u5176\u6210\u4E3A\u5355\u9875\u5E94\u7528'
+							'\u8BE5\u7F51\u7AD9\u5229\u7528\u4E86\uFF1A'
 						),
 						_react3.default.createElement(
-							'li',
-							null,
-							'express4.X\u642D\u5EFA\u540E\u53F0\u63A5\u53E3'
+							'ul',
+							{ className: _Home2.default.tip },
+							_react3.default.createElement(
+								'li',
+								null,
+								'react\u6784\u5EFA\u524D\u7AEF\u7684\u7EC4\u4EF6'
+							),
+							_react3.default.createElement(
+								'li',
+								null,
+								'react-router\u7BA1\u7406\u8DEF\u7531\u4F7F\u5176\u6210\u4E3A\u5355\u9875\u5E94\u7528'
+							),
+							_react3.default.createElement(
+								'li',
+								null,
+								'express4.X\u642D\u5EFA\u540E\u53F0\u63A5\u53E3'
+							),
+							_react3.default.createElement(
+								'li',
+								null,
+								'mongodb(mongoose)\u6570\u636E\u7684\u5B58\u53D6'
+							),
+							_react3.default.createElement(
+								'li',
+								null,
+								'webpack\u7BA1\u7406+\u6784\u5EFA'
+							)
 						),
 						_react3.default.createElement(
-							'li',
-							null,
-							'mongodb(mongoose)\u6570\u636E\u7684\u5B58\u53D6'
-						),
-						_react3.default.createElement(
-							'li',
-							null,
-							'webpack\u7BA1\u7406+\u6784\u5EFA'
-						)
-					),
-					_react3.default.createElement(
-						'p',
-						null,
-						_react3.default.createElement(
-							'a',
-							{ href: 'https://github.com/cqupt-yifanwu/blog' },
-							'github\u9879\u76EE\u5730\u5740'
+							'p',
+							{ className: _Home2.default.github },
+							_react3.default.createElement(
+								'a',
+								{ href: 'https://github.com/cqupt-yifanwu/blog' },
+								'github\u9879\u76EE\u5730\u5740'
+							)
 						)
 					)
 				);
@@ -33068,12 +33072,14 @@
 
 
 	// module
-	exports.push([module.id, ".e999J6UyBh2ASQyqzHqJy {\r\n\tmargin-top: 10px;\r\n\tmargin-bottom: 50px;\r\n}\r\n._2AbgEywvfW7EWhVhYddLLE {\r\n\tmargin-left: 30px;\r\n\tmargin-top: 10px;\r\n}", ""]);
+	exports.push([module.id, ".e999J6UyBh2ASQyqzHqJy {\r\n\tmargin-top: 10px;\r\n\tmargin-bottom: 50px;\r\n}\r\n._2AbgEywvfW7EWhVhYddLLE {\r\n\tmargin-left: 20px;\r\n\tmargin-top: 10px;\r\n}\r\n._1rCeaMmNVdkTdSjXoM3-nJ {\r\n\twidth: 70%;\r\n\tmargin: 0 auto;\r\n}\r\n._3H5qZzvaGb8pjMdS7RFvY- {\r\n\tmargin: 30px auto;\r\n}", ""]);
 
 	// exports
 	exports.locals = {
 		"index": "e999J6UyBh2ASQyqzHqJy",
-		"tip": "_2AbgEywvfW7EWhVhYddLLE"
+		"tip": "_2AbgEywvfW7EWhVhYddLLE",
+		"content": "_1rCeaMmNVdkTdSjXoM3-nJ",
+		"github": "_3H5qZzvaGb8pjMdS7RFvY-"
 	};
 
 /***/ },
@@ -33452,9 +33458,14 @@
 						'div',
 						{ className: _Main2.default.navbar },
 						_react3.default.createElement(
+							'div',
+							{ className: _Main2.default.imgBorder },
+							_react3.default.createElement('img', { className: _Main2.default.img, src: '../../../images/6165847895E8568AE73E6164F3668271B78151E6C.jpg' })
+						),
+						_react3.default.createElement(
 							'h1',
 							{ className: _Main2.default.title },
-							'\u6211\u7684\u4E2A\u4EBA\u7F51\u7AD9'
+							'Jiaoguibin\'s Blog'
 						),
 						_react3.default.createElement(
 							'ul',
@@ -33490,8 +33501,22 @@
 					),
 					_react3.default.createElement(
 						'div',
-						{ id: 'contents', className: _Main2.default.contents },
+						{ className: _Main2.default.contents },
 						this.props.children
+					),
+					_react3.default.createElement(
+						'div',
+						{ className: _Main2.default.footer },
+						_react3.default.createElement(
+							'p',
+							null,
+							'Copyright \xA9 Jiaoguibin 2016'
+						),
+						_react3.default.createElement(
+							'a',
+							{ href: 'https://github.com/cqupt-yifanwu' },
+							'My GitHub'
+						)
 					)
 				);
 			}
@@ -33538,16 +33563,18 @@
 
 
 	// module
-	exports.push([module.id, " {\r\n\ta {\r\n\t\ttext-decoration-style: none;\r\n\t}\r\n\t#_2Www1C0sPDxeSWG4LRu1IF h3 {\r\n\t\tcolor: #2085c5;\r\n\t\tmargin-bottom: 20px;\r\n\t}\r\n};\r\n._2Www1C0sPDxeSWG4LRu1IF {\r\n\tmargin: 80px auto;\r\n\twidth: 50%;\r\n\tmin-height: 600px;\r\n}\r\n._126DV46zBTU0FIBiYsn2lJ {\r\n\tcolor: #fff;\r\n}\r\n._2_4xadbAnOnoCbGQCt6RdX {\r\n\tposition: fixed;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\twidth: 100%;\r\n\tvertical-align: middle;\r\n\tbackground-color: #2085c5; \r\n\theight: 60px;\r\n\toverflow: hidden;\r\n}\r\n._1kjscUHxPGqjyyXQsxQrgu {\r\n\tfloat: left;\r\n\tmargin-left: 20%;\r\n}\r\n.BTEttiIQvuu_CIuZ2B39w{\r\n\tfloat: right;\r\n\tmargin-right: 20%;\r\n\tmargin-bottom: 30px;\r\n\ttext-align: center;\r\n\tdisplay: inline-block;\r\n\theight: 70px;\r\n\toverflow: hidden;\r\n}\r\n._3Udz2sMhKTt3j5xMX1JwzO {\r\n\tfloat: left;\r\n\tlist-style-type: none;\r\n\tmargin-left: 20px;\r\n\tmargin-top: 25px;\r\n}", ""]);
+	exports.push([module.id, "/* :global {\r\n\ta {\r\n\t\ttext-decoration-style: none;\r\n\t}\r\n\t#contents {\r\n\t\tmargin: 80px auto;\r\n\t\twidth: 50%;\r\n\t\tmin-height: 600px;\r\n\t}\r\n\t#contents h3 {\r\n\t\tcolor: #2085c5;\r\n\t\tmargin-bottom: 20px;\r\n\t}\r\n};\r\n */\r\n._2_4xadbAnOnoCbGQCt6RdX {\r\n\tposition: fixed;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\twidth: 100%;\r\n\tvertical-align: middle;\r\n\tbox-shadow: 0 0 10px rgba(14, 14, 14, .26);\r\n\tbackground-color: rgba(255, 255, 255, 0.98);\r\n\theight: 55px;\r\n\toverflow: hidden;\r\n}\r\n._1d3988PlHoV8YyrhPPWeAg {\r\n\twidth: 45px;\r\n\theight: 45px;\r\n\tfloat: left;\r\n\tmargin-left: 240px;\r\n\tmargin-top: 5px;\r\n\toverflow: hidden;\r\n\tborder-radius: 22.5px\r\n}\r\n._1Z20DlYk3mPDQhV56-nFaP {\r\n\twidth: 45px;\r\n\theight: 45px;\r\n}\r\n._1kjscUHxPGqjyyXQsxQrgu {\r\n\tfloat: left;\r\n\tmargin-left: 20%;\r\n}\r\n.BTEttiIQvuu_CIuZ2B39w{\r\n\tfloat: right;\r\n\tmargin-right: 20%;\r\n\tmargin-bottom: 30px;\r\n\ttext-align: center;\r\n\tdisplay: inline-block;\r\n\theight: 70px;\r\n\toverflow: hidden;\r\n}\r\n._3Udz2sMhKTt3j5xMX1JwzO {\r\n\tcolor: #0085a1;\r\n\tfloat: left;\r\n\tlist-style-type: none;\r\n\tmargin-left: 20px;\r\n\tmargin-top: 15px;\r\n}\r\n._2Www1C0sPDxeSWG4LRu1IF {\r\n\tmargin: 90px auto;\r\n\tpadding-left: 15px;\r\n\tpadding-right: 15px;\r\n\twidth: 60%;\r\n\tmin-height: 400px;\r\n}\r\n._1Ae49SXTufLV2k9ox1M4lm {\r\n\twidth: 40%;\r\n\theight: 100px;\r\n\tmargin: 30px auto;\r\n\ttext-align: center;\r\n\tvertical-align: middle;\r\n}", ""]);
 
 	// exports
 	exports.locals = {
-		"contents": "_2Www1C0sPDxeSWG4LRu1IF",
-		"font": "_126DV46zBTU0FIBiYsn2lJ",
 		"navbar": "_2_4xadbAnOnoCbGQCt6RdX",
-		"title": "_1kjscUHxPGqjyyXQsxQrgu _126DV46zBTU0FIBiYsn2lJ",
+		"imgBorder": "_1d3988PlHoV8YyrhPPWeAg",
+		"img": "_1Z20DlYk3mPDQhV56-nFaP",
+		"title": "_1kjscUHxPGqjyyXQsxQrgu",
 		"nav": "BTEttiIQvuu_CIuZ2B39w",
-		"lead": "_3Udz2sMhKTt3j5xMX1JwzO _126DV46zBTU0FIBiYsn2lJ"
+		"lead": "_3Udz2sMhKTt3j5xMX1JwzO",
+		"contents": "_2Www1C0sPDxeSWG4LRu1IF",
+		"footer": "_1Ae49SXTufLV2k9ox1M4lm"
 	};
 
 /***/ },
@@ -33571,6 +33598,10 @@
 	var _jquery2 = _interopRequireDefault(_jquery);
 
 	var _reactRouter = __webpack_require__(184);
+
+	var _Lists = __webpack_require__(400);
+
+	var _Lists2 = _interopRequireDefault(_Lists);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33620,7 +33651,7 @@
 				var url = "/detile/" + this.props.atl._id;
 				return _react3.default.createElement(
 					'div',
-					{ className: 'articleTitle' },
+					{ className: _Lists2.default.article },
 					_react3.default.createElement(
 						'h4',
 						null,
@@ -33628,6 +33659,20 @@
 							_reactRouter.Link,
 							{ to: url },
 							this.props.atl.title
+						)
+					),
+					_react3.default.createElement(
+						'p',
+						{ className: _Lists2.default.text },
+						this.props.atl.text
+					),
+					_react3.default.createElement(
+						'span',
+						{ className: _Lists2.default.read },
+						_react3.default.createElement(
+							_reactRouter.Link,
+							{ to: url },
+							'\u9605\u8BFB\u539F\u6587'
 						)
 					)
 				);
@@ -33704,7 +33749,7 @@
 					null,
 					_react3.default.createElement(
 						'h2',
-						{ className: 'partTitle' },
+						{ className: _Lists2.default.title },
 						'\u6587\u7AE0\u5217\u8868'
 					),
 					_react3.default.createElement(TitleList, { data: this.state.data })
@@ -43948,6 +43993,50 @@
 /* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(401);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(394)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(true) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept(401, function() {
+				var newContent = __webpack_require__(401);
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 401 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(393)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".odcblVwbPjZpCFrJS3uXy {\r\n\twidth: 600px;\r\n\theight: 160px;\r\n\tmargin-top: 20px;\r\n\tmargin-left: 20px;\r\n\tpadding: 10px 25px;\r\n\toverflow: hidden;\r\n\tborder-radius: 2px;\r\n\tbox-shadow: 2px 2px 5px #888;\r\n\tbackground-color: #fff;\r\n}\r\n._1K7fWZEmoh1CQL0YiKvk3e {\r\n\tmargin-top: 15px;\r\n\toverflow: hidden;\r\n\ttext-indent: 2em;\r\n\tline-height: 1.4em;\r\n\theight: 4.2em;\r\n}\r\n._3wmvIaPm6jZ7zkRVWgQH0S {\r\n\tcolor: #3385ff;\r\n}", ""]);
+
+	// exports
+	exports.locals = {
+		"article": "odcblVwbPjZpCFrJS3uXy",
+		"text": "_1K7fWZEmoh1CQL0YiKvk3e",
+		"read": "_3wmvIaPm6jZ7zkRVWgQH0S"
+	};
+
+/***/ },
+/* 402 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
 
 	var _react2 = __webpack_require__(2);
@@ -44085,7 +44174,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(241)(module)))
 
 /***/ },
-/* 401 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
@@ -44207,7 +44296,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(241)(module)))
 
 /***/ },
-/* 402 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
@@ -44226,7 +44315,7 @@
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
-	var _CommentBox = __webpack_require__(403);
+	var _CommentBox = __webpack_require__(405);
 
 	var _CommentBox2 = _interopRequireDefault(_CommentBox);
 
@@ -44303,7 +44392,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(241)(module)))
 
 /***/ },
-/* 403 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
@@ -44322,7 +44411,7 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _marked = __webpack_require__(404);
+	var _marked = __webpack_require__(406);
 
 	var _marked2 = _interopRequireDefault(_marked);
 
@@ -44538,7 +44627,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(241)(module)))
 
 /***/ },
-/* 404 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
