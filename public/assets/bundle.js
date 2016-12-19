@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d5a10809f8015eaf8864"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e1ddacfbb3bc03ccdc41"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -622,7 +622,7 @@
 
 	var _AboutMe2 = _interopRequireDefault(_AboutMe);
 
-	var _Detile = __webpack_require__(404);
+	var _Detile = __webpack_require__(406);
 
 	var _Detile2 = _interopRequireDefault(_Detile);
 
@@ -33563,7 +33563,7 @@
 
 
 	// module
-	exports.push([module.id, "/* :global {\r\n\ta {\r\n\t\ttext-decoration-style: none;\r\n\t}\r\n\t#contents {\r\n\t\tmargin: 80px auto;\r\n\t\twidth: 50%;\r\n\t\tmin-height: 600px;\r\n\t}\r\n\t#contents h3 {\r\n\t\tcolor: #2085c5;\r\n\t\tmargin-bottom: 20px;\r\n\t}\r\n};\r\n */\r\n._2_4xadbAnOnoCbGQCt6RdX {\r\n\tposition: fixed;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\twidth: 100%;\r\n\tvertical-align: middle;\r\n\tbox-shadow: 0 0 10px rgba(14, 14, 14, .26);\r\n\tbackground-color: rgba(255, 255, 255, 0.98);\r\n\theight: 55px;\r\n\toverflow: hidden;\r\n}\r\n._1d3988PlHoV8YyrhPPWeAg {\r\n\twidth: 45px;\r\n\theight: 45px;\r\n\tfloat: left;\r\n\tmargin-left: 240px;\r\n\tmargin-top: 5px;\r\n\toverflow: hidden;\r\n\tborder-radius: 22.5px\r\n}\r\n._1Z20DlYk3mPDQhV56-nFaP {\r\n\twidth: 45px;\r\n\theight: 45px;\r\n}\r\n._1kjscUHxPGqjyyXQsxQrgu {\r\n\tfloat: left;\r\n\tmargin-left: 20%;\r\n}\r\n.BTEttiIQvuu_CIuZ2B39w{\r\n\tfloat: right;\r\n\tmargin-right: 20%;\r\n\tmargin-bottom: 30px;\r\n\ttext-align: center;\r\n\tdisplay: inline-block;\r\n\theight: 70px;\r\n\toverflow: hidden;\r\n}\r\n._3Udz2sMhKTt3j5xMX1JwzO {\r\n\tcolor: #0085a1;\r\n\tfloat: left;\r\n\tlist-style-type: none;\r\n\tmargin-left: 20px;\r\n\tmargin-top: 15px;\r\n}\r\n._2Www1C0sPDxeSWG4LRu1IF {\r\n\tmargin: 90px auto;\r\n\tpadding-left: 15px;\r\n\tpadding-right: 15px;\r\n\twidth: 60%;\r\n\tmin-height: 400px;\r\n}\r\n._1Ae49SXTufLV2k9ox1M4lm {\r\n\twidth: 40%;\r\n\theight: 100px;\r\n\tmargin: 30px auto;\r\n\ttext-align: center;\r\n\tvertical-align: middle;\r\n}", ""]);
+	exports.push([module.id, "/* :global {\r\n\ta {\r\n\t\ttext-decoration-style: none;\r\n\t}\r\n\t#contents {\r\n\t\tmargin: 80px auto;\r\n\t\twidth: 50%;\r\n\t\tmin-height: 600px;\r\n\t}\r\n\t#contents h3 {\r\n\t\tcolor: #2085c5;\r\n\t\tmargin-bottom: 20px;\r\n\t}\r\n};\r\n */\r\n._2_4xadbAnOnoCbGQCt6RdX {\r\n\tposition: fixed;\r\n\ttop: 0;\r\n\tleft: 0;\r\n\twidth: 100%;\r\n\tvertical-align: middle;\r\n\tbox-shadow: 0 0 10px rgba(14, 14, 14, .26);\r\n\tbackground-color: rgba(255, 255, 255, 0.98);\r\n\theight: 55px;\r\n\toverflow: hidden;\r\n}\r\n._1d3988PlHoV8YyrhPPWeAg {\r\n\twidth: 45px;\r\n\theight: 45px;\r\n\tfloat: left;\r\n\tmargin-left: 18%;\r\n\tmargin-top: 5px;\r\n\toverflow: hidden;\r\n\tborder-radius: 22.5px\r\n}\r\n._1Z20DlYk3mPDQhV56-nFaP {\r\n\twidth: 45px;\r\n\theight: 45px;\r\n}\r\n._1kjscUHxPGqjyyXQsxQrgu {\r\n\tfloat: left;\r\n\tmargin-left: 2%;\r\n\tmargin-top: 5px;\r\n}\r\n.BTEttiIQvuu_CIuZ2B39w{\r\n\tfloat: right;\r\n\tmargin-right: 20%;\r\n\tmargin-bottom: 30px;\r\n\ttext-align: center;\r\n\tdisplay: inline-block;\r\n\theight: 70px;\r\n\toverflow: hidden;\r\n}\r\n._3Udz2sMhKTt3j5xMX1JwzO {\r\n\tcolor: #0085a1;\r\n\tfloat: left;\r\n\tlist-style-type: none;\r\n\tmargin-left: 20px;\r\n\tmargin-top: 15px;\r\n}\r\n._2Www1C0sPDxeSWG4LRu1IF {\r\n\tmargin: 90px auto;\r\n\tpadding-left: 15px;\r\n\tpadding-right: 15px;\r\n\twidth: 60%;\r\n\tmin-height: 400px;\r\n}\r\n._1Ae49SXTufLV2k9ox1M4lm {\r\n\twidth: 40%;\r\n\theight: 100px;\r\n\tmargin: 30px auto;\r\n\ttext-align: center;\r\n\tvertical-align: middle;\r\n}", ""]);
 
 	// exports
 	exports.locals = {
@@ -44177,7 +44177,7 @@
 /* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
 
 	var _react2 = __webpack_require__(2);
 
@@ -44189,6 +44189,10 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+	var _AboutMe = __webpack_require__(404);
+
+	var _AboutMe2 = _interopRequireDefault(_AboutMe);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -44199,12 +44203,12 @@
 
 	var _components = {
 		AboutMe: {
-			displayName: "AboutMe"
+			displayName: 'AboutMe'
 		}
 	};
 
 	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-		filename: "D:/WEB/demo/React/Blog/blog/public/assets/js/component/AboutMe.js",
+		filename: 'D:/WEB/demo/React/Blog/blog/public/assets/js/component/AboutMe.js',
 		components: _components,
 		locals: [module],
 		imports: [_react3.default]
@@ -44216,7 +44220,7 @@
 		};
 	}
 
-	var AboutMe = _wrapComponent("AboutMe")(function (_React$Component) {
+	var AboutMe = _wrapComponent('AboutMe')(function (_React$Component) {
 		_inherits(AboutMe, _React$Component);
 
 		function AboutMe() {
@@ -44226,62 +44230,97 @@
 		}
 
 		_createClass(AboutMe, [{
-			key: "render",
+			key: 'render',
 			value: function render() {
 				return _react3.default.createElement(
-					"div",
-					{ className: "aboutme" },
+					'div',
+					null,
 					_react3.default.createElement(
-						"h3",
-						{ className: "partTitle" },
-						"\u5173\u4E8E"
+						'h3',
+						{ className: _AboutMe2.default.title },
+						'\u5173\u4E8E\u6211'
 					),
 					_react3.default.createElement(
-						"ul",
-						null,
+						'ul',
+						{ className: _AboutMe2.default.msg },
 						_react3.default.createElement(
-							"li",
+							'li',
 							null,
 							_react3.default.createElement(
-								"em",
+								'em',
 								null,
-								"\u59D3\u540D"
+								'\u59D3\u540D'
 							),
-							"\uFF1A\u7126\u8D35\u5F6C"
+							'\uFF1A\u7126\u8D35\u5F6C'
 						),
 						_react3.default.createElement(
-							"li",
+							'li',
 							null,
 							_react3.default.createElement(
-								"em",
+								'em',
 								null,
-								"\u5B66\u6821"
+								'\u5B66\u6821'
 							),
-							"\uFF1A\u91CD\u5E86\u90AE\u7535\u5927\u5B66"
+							'\uFF1A\u91CD\u5E86\u90AE\u7535\u5927\u5B66'
 						),
 						_react3.default.createElement(
-							"li",
+							'li',
 							null,
 							_react3.default.createElement(
-								"em",
+								'em',
 								null,
-								"emile"
+								'\u4E13\u4E1A'
 							),
-							"\uFF1A616584789@qq.com"
+							'\uFF1A\u4FE1\u606F\u7BA1\u7406\u4E0E\u5546\u52A1\u667A\u80FD\u521B\u65B0\u5B9E\u9A8C\u73ED'
 						),
 						_react3.default.createElement(
-							"li",
+							'li',
 							null,
 							_react3.default.createElement(
-								"em",
+								'em',
 								null,
-								"github"
+								'emile'
 							),
-							"\uFF1A",
+							'\uFF1A616584789@qq.com'
+						),
+						_react3.default.createElement(
+							'li',
+							null,
 							_react3.default.createElement(
-								"a",
-								{ href: "https://github.com/cqupt-yifanwu" },
-								"https://github.com/cqupt-yifanwu"
+								'em',
+								null,
+								'\u7535\u8BDD'
+							),
+							'\uFF1A18883990913'
+						),
+						_react3.default.createElement(
+							'li',
+							null,
+							_react3.default.createElement(
+								'em',
+								null,
+								'github'
+							),
+							'\uFF1A',
+							_react3.default.createElement(
+								'a',
+								{ href: 'https://github.com/cqupt-yifanwu' },
+								'https://github.com/cqupt-yifanwu'
+							)
+						),
+						_react3.default.createElement(
+							'li',
+							null,
+							_react3.default.createElement(
+								'em',
+								null,
+								'\u535A\u5BA2\u56ED'
+							),
+							'\uFF1A',
+							_react3.default.createElement(
+								'a',
+								{ href: 'https://home.cnblogs.com/nanshanlaoyao/' },
+								'https://home.cnblogs.com/nanshanlaoyao/'
 							)
 						)
 					)
@@ -44297,6 +44336,49 @@
 
 /***/ },
 /* 404 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(405);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(394)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(true) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept(405, function() {
+				var newContent = __webpack_require__(405);
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 405 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(393)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "._2tV49dQTWvZ8DC4wqOX1Pv {\r\n\tmargin-left: 5em;\r\n}\r\n._19KccpBFagGD3MX2zYaixv {\r\n\tmargin-left: 10em;\r\n\tmargin-top: 5em;\r\n}", ""]);
+
+	// exports
+	exports.locals = {
+		"title": "_2tV49dQTWvZ8DC4wqOX1Pv",
+		"msg": "_19KccpBFagGD3MX2zYaixv"
+	};
+
+/***/ },
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
@@ -44315,7 +44397,7 @@
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
-	var _CommentBox = __webpack_require__(405);
+	var _CommentBox = __webpack_require__(407);
 
 	var _CommentBox2 = _interopRequireDefault(_CommentBox);
 
@@ -44392,7 +44474,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(241)(module)))
 
 /***/ },
-/* 405 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
@@ -44411,13 +44493,17 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _marked = __webpack_require__(406);
+	var _marked = __webpack_require__(408);
 
 	var _marked2 = _interopRequireDefault(_marked);
 
 	var _jquery = __webpack_require__(399);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
+
+	var _CommentBox = __webpack_require__(409);
+
+	var _CommentBox2 = _interopRequireDefault(_CommentBox);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -44469,16 +44555,21 @@
 					value: function render() {
 							return _react3.default.createElement(
 									'div',
-									{ className: 'comment' },
-									_react3.default.createElement(
-											'h4',
-											{ className: 'commentAuthor' },
-											this.props.author
-									),
+									{ className: _CommentBox2.default.comment },
 									_react3.default.createElement(
 											'p',
-											null,
+											{ className: _CommentBox2.default.text },
 											this.props.text
+									),
+									_react3.default.createElement(
+											'span',
+											null,
+											'\u8BC4\u8BBA\u4EBA\uFF1A'
+									),
+									_react3.default.createElement(
+											'h4',
+											{ className: _CommentBox2.default.author },
+											this.props.author
 									)
 							);
 					}
@@ -44504,7 +44595,7 @@
 							});
 							return _react3.default.createElement(
 									'div',
-									{ className: 'commentList' },
+									{ className: _CommentBox2.default.list },
 									commentNodes
 							);
 					}
@@ -44541,11 +44632,12 @@
 					value: function render() {
 							return _react3.default.createElement(
 									'form',
-									{ className: 'commentForm', onSubmit: this.handleSubmit.bind(this) },
-									_react3.default.createElement('input', { type: 'text', placeholder: '\u4F60\u7684\u540D\u5B57', ref: 'author' }),
+									{ className: _CommentBox2.default.form, onSubmit: this.handleSubmit.bind(this) },
+									_react3.default.createElement('input', { className: _CommentBox2.default.name, type: 'text', placeholder: '\u4F60\u7684\u540D\u5B57', ref: 'author' }),
 									_react3.default.createElement('br', null),
-									_react3.default.createElement('textarea', { placeholder: '\u8BF4\u4E9B\u4EC0\u4E48', rows: '20', cols: '40', ref: 'text' }),
-									_react3.default.createElement('input', { type: 'submit', value: '\u53D1\u8868' })
+									_react3.default.createElement('textarea', { className: _CommentBox2.default.textInput, placeholder: '\u8BF4\u4E9B\u4EC0\u4E48', rows: '10', cols: '95', ref: 'text' }),
+									_react3.default.createElement('br', null),
+									_react3.default.createElement('input', { className: _CommentBox2.default.btn, type: 'submit', value: '\u53D1\u8868' })
 							);
 					}
 			}]);
@@ -44608,7 +44700,7 @@
 					value: function render() {
 							return _react3.default.createElement(
 									'div',
-									{ className: 'commentBox' },
+									{ className: _CommentBox2.default.box },
 									_react3.default.createElement(
 											'h3',
 											null,
@@ -44627,7 +44719,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(241)(module)))
 
 /***/ },
-/* 406 */
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -45918,6 +46010,56 @@
 	}());
 
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 409 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(410);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(394)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(true) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept(410, function() {
+				var newContent = __webpack_require__(410);
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 410 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(393)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".e9eP-sEt07t246zuJEzKJ {\r\n\tmargin-top: 30px;\r\n}\r\n._2nGqL7V2IWVN_sUgZRMeSC {\r\n\tmargin-left: 30px;\r\n}\r\n._3mPtvyAcsX9MwDoW5NPRlJ {\r\n\tmargin-bottom: 10px\r\n}\r\n._1-9Q8bPjVFd3nLhA41jZZy {\r\n\tmargin-left: 10px;\r\n}\r\n._3an5LlM8uxQnH_GPrXKEVK {\r\n\twidth: 80%;\r\n\tmin-height: 80px;\r\n\tbox-shadow: 1px 1px 5px #999;\r\n\tmargin-bottom: 15px;\r\n\tpadding: 15px;\r\n\tbox-sizing: content-box;\r\n}\r\n._2Y7pvvidY4DaMJkRbjMpxu {\r\n\tmargin-top: 20px;\r\n\tmargin-left: 30px;\r\n}\r\n._3MVdnVrfEYaHBP7RCjUAHJ {\r\n\twidth: 65px;\r\n\theight: 30px;\r\n\tline-height: 30px;\r\n\ttext-align: center;\r\n\tfont-size: 14px;\r\n\tdisplay: inline-block;\r\n\tbackground-color: #fff;\r\n\tborder: 1px solid #666;\r\n}\r\n._3ejFpIpJqwfVbda1a9MtPM {\r\n\tpadding: 2px;\r\n\tbackground-color: rgb(235, 235, 228);\r\n}\r\n._2_8P60puIYqRpyCPEdPVwW {\r\n\tmargin-top: 15px;\r\n\tresize: none;\r\n}", ""]);
+
+	// exports
+	exports.locals = {
+		"box": "e9eP-sEt07t246zuJEzKJ",
+		"list": "_2nGqL7V2IWVN_sUgZRMeSC",
+		"text": "_3mPtvyAcsX9MwDoW5NPRlJ",
+		"auther": "_1-9Q8bPjVFd3nLhA41jZZy",
+		"comment": "_3an5LlM8uxQnH_GPrXKEVK",
+		"form": "_2Y7pvvidY4DaMJkRbjMpxu",
+		"btn": "_3MVdnVrfEYaHBP7RCjUAHJ",
+		"name": "_3ejFpIpJqwfVbda1a9MtPM",
+		"textInput": "_2_8P60puIYqRpyCPEdPVwW"
+	};
 
 /***/ }
 /******/ ]);

@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import marked from 'marked';
 import $ from 'jquery';
+import style from './CommentBox.css'
 
 class Comment extends React.Component {
   render () {
-    return  <div className="comment">
-        <h4 className="commentAuthor">
+    return  <div className={style.comment}>
+        <p className={style.text}>{this.props.text}</p>
+        <span>评论人：</span><h4 className={style.author}>
           {this.props.author}
         </h4>
-        <p>{this.props.text}</p>
       </div>;
   }
 }
@@ -19,7 +20,7 @@ class CommentList extends React.Component {
       return <Comment author={comment.author} text={comment.text}>
         </Comment>;
     });     
-    return <div className="commentList">
+    return <div className={style.list}>
         {commentNodes}
       </div>;
   }
@@ -38,10 +39,10 @@ class CommentForm extends React.Component {
     return;
   }
   render () {
-    return <form className="commentForm" onSubmit={this.handleSubmit.bind(this)}>
-        <input type="text" placeholder="你的名字" ref="author" /><br/>
-        <textarea placeholder="说些什么" rows="20" cols="40" ref="text"></textarea>
-        <input type="submit" value="发表" />
+    return <form className={style.form} onSubmit={this.handleSubmit.bind(this)}>
+        <input className={style.name} type="text" placeholder="你的名字" ref="author" /><br/>
+        <textarea className={style.textInput} placeholder="说些什么" rows="10" cols="95" ref="text"></textarea><br />
+        <input className={style.btn} type="submit" value="发表" />
       </form>;
   }
 }
@@ -79,7 +80,7 @@ class CommentBox extends React.Component {
 		this.loadCommentsFromServer();
 	}
 	render() {
-		return <div className="commentBox">
+		return <div className={style.box}>
 			<h3>留言区</h3>
 			<CommentList data={this.state.data}/>
 			<CommentForm onCommentSubmit={this.handleCommentSubmit.bind(this)} articleId={this.props.id}/>

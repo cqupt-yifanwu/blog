@@ -1,0 +1,42 @@
+.box {
+	margin-top: 30px;
+}
+.list {
+	margin-left: 30px;
+}
+.text {
+	margin-bottom: 10px
+}
+.auther {
+	margin-left: 10px;
+}
+.comment {
+	width: 80%;
+	min-height: 80px;
+	box-shadow: 1px 1px 5px #999;
+	margin-bottom: 15px;
+	padding: 15px;
+	box-sizing: content-box;
+}
+.form {
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.btn {
+	width: 65px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	display: inline-block;
+	background-color: #fff;
+	border: 1px solid #666;
+}
+.name {
+	padding: 2px;
+	background-color: rgb(235, 235, 228);
+}
+.textInput {
+	margin-top: 15px;
+	resize: none;
+}
