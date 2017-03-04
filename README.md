@@ -2,7 +2,7 @@
 react+react router+node（express）+mongodb+webpack 栈
 
 ##### 简介
-* 该项目是一个简单的个人网站（博客）
+* 该项目是一个简单的博客系统
 * 实现了浏览文章，发布新文章，文章下留言等功能
 * 使用react组建前端组件（view）
 * 使用react-router管理路由（单页应用）
