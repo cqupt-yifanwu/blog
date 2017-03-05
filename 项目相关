@@ -1,0 +1,74 @@
+#### Blog 项目相关
+
+## react
+##### react-router history属性与区别
+ 
+history属性用来监听浏览器地址栏的变换，并将URL解析成一个对象，供React-Router匹配 history对象有三个属性browserHistory,hashHistory,creacteMemoryHistory
+ - hashHistory路由将通过URL的#切换（通过hash完成）
+ - browserHistory 不通过Hash完成，而显示正常的路径，是会向server发送请求的，所以要对server端做特殊配置
+ - createMemoryHistory主要用于服务端渲染，他创建一个内存中的history对象，不与浏览器互动。
+
+##### 在react引用图片的问题
+webpack中不太能处理html中引用图片
+- 我们可以用es6的import方法（在webpack中一切皆模块）
+- 也可以作为css的背景引入进去，这里有点不一样的地方在，如果样式是嵌入在jsx中的那么该图片的路径应该相对于bundle文件的位置，而写在样式表中则是相对于本身
+- 用src时可以使用require引入
+
+##### react中使用ES6的坑
+- 类名（组件名）一定要用大写开头，否则自定义的组件无法编译，识别不出来。
+- 类中定义render函数要注意两点
+  - 开头花括号一定要和小括号隔一个空格
+  - 标签的前一半一定要和return一行
+- 在class中使用class中使用class的变量或者方法，一定要加this
+- es6绑定事件需要bind(this) ，这样function和bind里面的参数'this'才绑定到一起
+
+##### 关于组件化的认识
+- 在react中所谓组件就是状态机。当组件处于某个状态时那么就输出这个状态对应的页面。像纯函数一样，容易去保证界面的一致性。
+- 将项目拆分成比较小的粒度去组件化，可以提高代码的重用性。
+- 采用的是分治的思想，耦合性低，易于管理。
+- 在项目中可以将组件细分成含有抽象数据的容器组件，和只有业务逻辑的展示型组件。
+
+##### 子组件向父组件传递状态
+- 使用redux、flux
+- 使用回调函数来向父组件，父组件定义事件处理函数，在函数中改变父组件的state，将该函数通过props传递给子组件，然后绑定。等该事件触发时便会改变父元素的状态。
+- 可以通过使用context（就相当于一个全局变量），context可以跨级从父组件向子组件传值，也可以实现子获取和设置父暴露出来的属性值
+
+##### flux
+为了解决MVC数据流混乱的问题flux被提出，它的核心思想就是数据和逻辑永远单项流动。数据从action到dispatcher，再到store，最终到view的路线是单向不可逆的。dispatcher定义了严格的规则来限定我们对数据的修改操作；store中不能暴露setter的设定也强化了输一局修改的纯洁性，保证了store的数据确定唯一的状态。其中flux有三大部分构成：
+ - dispatcher，负责分发事件，它有两个方法，一个注册监听器，另外一个分发一个action。注意，在flux中只有分发一个action才能修改数据，没有其他方法.
+ - store，负责保存数据，同时响应并更新数据。当我们使用dispatcher分发一个action时，store注册的监听器就会被调用
+ - view，负责订阅store中的数据，并且使用这些数据渲染响应的页面（使用react作为 view）
+
+在这个结构中类似MVC但是不存在一个controller，但是却像是存在一个controller-view。主要进行store与react组件（view）之间的绑定，定义数据已经更新传递方式,它会调用store的getter获取其中的数据并设置为自己的state,然后调用setState.
+
+- redux 和 flux 的区别
+  > 在flux中我们在actionCreator里面调用AppDispatcher.dispath方法来触发action，这样不仅有冗余而且直接修改了store中的数据，**将无法保存数据前后变化的状态**。在react中采用纯函数reducer来修改状态。
+
+
+
+
+## Node.js
+
+##### 关于异步I/O
+- 异步调用将请求对象放入线程池
+- 线程池寻找可用的线程，执行异步调用放入的请求对象，然后将执行完成的结果放在请求对象中，通知IOCP完成 （window下面的引擎，管理线程池）
+- 事件模型（Event Loop）完成的I/O交给I/o观察者执行回调函数。
+ 
+
+
+## ES6
+##### 模块化
+在该项目中利用的是es6中的模块化，利用webpack构建，它支持多种模块化的方案，es6模块化与其他方案的不同：
+- es6模块化的设计思想是尽量静态化，是的编译时就能确定模块的依赖关系，以及输入输出的变量。CommonJs和AMD模块都只能在运行时确定这些东西。例如
+  ```
+  // conmmonjs
+  let {stat,exists} = require('fs');
+  // 代码运行的实质是整体加载fs模块（既加载fs的所有方法，这称为运行时加载）
+  
+  // es6
+  import {state,exits} form 'fs';
+  // 以上代码的实质是从fs模块加载两个方法，其他方法并不加载。这成为“编译时加载”
+  ```
+  es6在编译时就可以完成模块的编译，效率要比commonjs的加载要高。
+- es6自动在模块中采用严格模式
+- es6模块化加载机制与Commonjs完全不同，CommonJs模块输出的是一个值的拷贝，而es6输出的则是值的引用。
