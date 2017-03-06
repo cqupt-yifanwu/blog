@@ -45,6 +45,7 @@ module.exports = {
 	],
 	resolve: {
 	    extensions: ['', '.js', '.jsx']
+	    // 这里可以使用alias配置项，可以显示的指定我们常用的一些库，避免webpack自己的查找
 	},
 	devServer: {    
 	    contentBase: "./public",//本地服务器所加载的页面所在的目录
