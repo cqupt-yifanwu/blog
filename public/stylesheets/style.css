@@ -1,0 +1,96 @@
+/*重置*/
+body,html,ul,ol,li,p,h1,h2,h3,h4,h5,h6 {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #404040;
+}
+body {
+	font-family: -apple-system, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+h3 {
+	margin-bottom: 30px;
+}
+/* 导航样式 */
+/* .mainContent {
+	margin: 0 auto;
+	width: 50%;
+	min-height: 500px;
+}
+.navBar {
+	margin-top: 20px;
+	margin-left: -30px;
+	list-style-type: none;
+	background-color: ;
+	overflow: hidden;
+}
+.navBar li {
+	float: left;
+	margin-left: 30px;
+}
+
+Home页
+.Index {
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+.Index h3 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.Index ul {
+	margin-left: 30px;
+}
+
+列表页样式
+.partTitle {
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+.articleTitle {
+	margin-bottom: 20px;
+	margin-top: 5px;
+	border-bottom: 1px solid #666;
+	cursor: pointer;
+}
+
+上传文章
+.ArticalForm label {
+	margin-bottom: 10px;
+}
+.ArticalForm textarea{
+	margin-top: 10px;
+	vertical-align: top;
+}
+
+详情页样式
+.detile {
+	margin-top: 30px;
+}
+.detile h3 {
+	margin-top: 20px; 
+	margin-bottom: 10px;
+}
+.detile p {
+	width: 70%;
+	margin-top: 20px;
+}
+
+评论的样式
+.comment p{
+	border-bottom: 1px solid #666;
+}
+.commentForm input{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+关于
+.aboutme li{
+	list-style-type: none;
+	margin-bottom: 15px;
+}
+
+ */
