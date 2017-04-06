@@ -1,7 +1,7 @@
 # blog
 react+react router+node（express）+mongodb+webpack 栈
 
-### [项目相关](https://github.com/cqupt-yifanwu/blog/blob/master/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3.md)
+
 
 ##### 简介
 * 该项目是一个简单的博客系统
